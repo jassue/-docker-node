@@ -1,0 +1,20 @@
+version: "3"
+services:
+  node:
+    image: jassue/node
+    container_name: node
+    tty: true
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - /data/app:/app
+    working_dir: /app
+    ports:
+      - "80:80"
+      - "8080:8080"
+    networks:
+      - docker_network
+
+networks:
+  docker_network:
+    driver: bridge
