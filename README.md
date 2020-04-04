@@ -2,7 +2,7 @@
 
 # docker image for node
 
-该镜像以官方node-alpine镜像为基础，安装了`PM2`、`Git`，体积相对比较小，由于国内npm下载速度太慢，默认使用`taobao`镜像源。
+该镜像以官方node-alpine镜像为基础，安装了`PM2`，体积相对比较小，由于国内npm下载速度太慢，默认使用`taobao`镜像源。
 
 ## 使用方法
 

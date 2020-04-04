@@ -4,9 +4,8 @@ MAINTAINER jassue
 ENV APP_DIR=/app \
     NODE_ENV=development
 
-RUN apk add --no-cache git openssh \
-    && npm install -g nrm \
-    && nrm use taobao \
+RUN npm config set registry https://registry.npm.taobao.org/ \
+    && npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ \
     && npm install -g pm2 \
     && mkdir $APP_DIR
 
