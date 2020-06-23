@@ -1,8 +1,7 @@
 FROM node:12.14.0-alpine
 MAINTAINER jassue
 
-ENV APP_DIR=/app \
-    NODE_ENV=development
+ENV APP_DIR=/app
 
 RUN npm config set registry https://registry.npm.taobao.org/ \
     && npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/ \
