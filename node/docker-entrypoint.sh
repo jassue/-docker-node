@@ -3,7 +3,7 @@
 set -e
 
 if [ -f "./pm2.conf.json" ]; then
-    pm2 start pm2.conf.json --env $APP_ENV
+    pm2 start pm2.conf.json
 fi
 
 exec node
