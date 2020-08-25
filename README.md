@@ -2,7 +2,7 @@
 
 # docker image for node
 
-该镜像以官方node-alpine镜像为基础，安装了`PM2`，体积相对比较小，由于国内npm下载速度太慢，默认使用`taobao`镜像源。
+该镜像以官方node-alpine镜像为基础，默认使用`taobao`镜像源。
 
 ## 使用方法
 
@@ -47,4 +47,4 @@ networks:
 docker-compose up -d
 ~~~
 
-注意：容器启动后默认使用`PM2`将工作目录下的`pm2.conf.json`作为配置启动进程，关于`PM2`的具体介绍和配置方法请查看[官方文档](https://pm2.keymetrics.io/)，通过配置就可以帮我们实现多进程启动。
+注意：容器启动后默认使用`PM2`将工作目录下的`pm2.conf.json`作为配置启动进程，关于`PM2`的具体介绍和配置方法请查看[官方文档](https://pm2.keymetrics.io/)。
